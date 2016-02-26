@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style type="text/css">
+        body { margin: 30px; font-family: sans-serif; background: #fff; }
+        h1 { background: #ccf; padding: #ddd; }
+    </style>
+</head>
+<body>
+    <p><a href="/paste/add/">Add one</a> &bull;
+    <a href="/paste/">List all</a></p>
+    {% block content %}{% endblock %}
+</body>
+</html>
